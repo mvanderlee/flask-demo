@@ -1,0 +1,18 @@
+flask
+flask-smorest
+marshmallow_dataclass
+
+# dev only requirements
+colorama
+flake8
+flake8-commas
+flake8-comprehensions
+flake8-isort
+flake8-printf-formatting
+isort
+pre-commit
+pyclean
+pyflakes
+pytest-flake8
+pytest-cov
+pytest-sugar
