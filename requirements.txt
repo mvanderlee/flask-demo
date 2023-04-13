@@ -1,6 +1,7 @@
 flask
 flask-smorest
 marshmallow_dataclass
+marshmallow_api_utils
 
 # dev only requirements
 colorama
