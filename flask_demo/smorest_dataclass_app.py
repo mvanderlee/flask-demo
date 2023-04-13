@@ -3,6 +3,7 @@ from flask.views import MethodView
 from flask_smorest import Api, Blueprint
 from marshmallow.validate import Range
 from marshmallow_api_utils.fields import required_field
+from marshmallow_api_utils.ma_dataclass import MaDataclass  # provides 'Schema' as classvar
 from marshmallow_dataclass import dataclass as ma_dataclass
 
 app = Flask(__name__)
@@ -15,7 +16,7 @@ blp = Blueprint("root", "root")
 
 
 @ma_dataclass
-class QueryParams:
+class QueryParams(MaDataclass):
     age: int = required_field(validate=Range(min=18), help='This will show up in swagger')
 
 
